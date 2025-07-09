@@ -26,16 +26,27 @@ Este repositório contém o código-fonte do site da **Clínica Odontológica RM
 
 📁 clinica-odontologica/
 ├── index.html # Página principal
+│
 ├── servicos.html # Lista de serviços oferecidos
+│
 ├── galeria.html # Galeria de fotos da clínica
+│
 ├── contato.html # Formulário de contato
+│
 ├── sobre.html # (Opcional) Informações sobre a clínica
+│
 ├── assets/
+│ │
 │ ├── css/
+│ │ │
 │ │ └── style.css # Estilo personalizado
+│ │
 │ ├── js/
+│ │ │
 │ │ └── script.js # JS para interações (ex: botão WhatsApp, modo escuro)
+│ │
 │ └── imagens/ # Logos, fotos da clínica, etc.
+│
 └── README.md
 
 
@@ -54,12 +65,6 @@ Você pode abrir o site diretamente no navegador clicando duas vezes no arquivo 
 2. Vá em **Settings > Pages**  
 3. Escolha a branch `main` e pasta `/root`  
 4. Pronto! Seu site estará no ar ✅  
-
-## 🔗 Demonstração
-
-👉 [Acesse o site da Clínica RM](https://Ageubr.github.io/CLINICA_ODONTO_RM/)
-
-*(Substitua `seuusuario` pelo seu usuário do GitHub e ajuste o nome do repositório)*
 
 ## 📝 Licença
 
