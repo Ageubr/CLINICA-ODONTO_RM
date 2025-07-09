@@ -26,27 +26,27 @@ Este repositório contém o código-fonte do site da **Clínica Odontológica RM
 
 📁 clinica-odontologica/
 ├── index.html # Página principal
-│
+
 ├── servicos.html # Lista de serviços oferecidos
-│
+
 ├── galeria.html # Galeria de fotos da clínica
-│
+
 ├── contato.html # Formulário de contato
-│
+
 ├── sobre.html # (Opcional) Informações sobre a clínica
-│
+
 ├── assets/
-│ │
+
 │ ├── css/
-│ │ │
+
 │ │ └── style.css # Estilo personalizado
-│ │
+
 │ ├── js/
-│ │ │
+
 │ │ └── script.js # JS para interações (ex: botão WhatsApp, modo escuro)
-│ │
+
 │ └── imagens/ # Logos, fotos da clínica, etc.
-│
+
 └── README.md
 
 
