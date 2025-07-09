@@ -1,0 +1,21 @@
+# Evita arquivos de configurações locais
+.vscode/
+.idea/
+*.log
+*.tmp
+
+# MacOS / Linux / Windows
+.DS_Store
+Thumbs.db
+
+# Backups de editores
+*~
+
+# Arquivos do sistema
+desktop.ini
+
+# Pastas de deploy (se você usar alguma futuramente)
+dist/
+build/
+# Arquivos de dependências
+node_modules/   
