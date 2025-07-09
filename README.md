@@ -25,15 +25,17 @@ Este repositório contém o código-fonte do site da **Clínica Odontológica RM
 ## 📁 Estrutura do Projeto
 
 clinica-odontologica/
-├── index.html
+├── pages/
 
-├── services.html
+│   ├──index.html
 
-├── gallery.html
+│   ├── services.html
 
-├── contact.html
+│   ├── gallery.html
 
-├── about.html
+│   ├── contact.html
+
+│   ├── about.html
 
 ├── assets/
 
@@ -67,8 +69,9 @@ clinica-odontologica/
 
 ├── docs/                 # documentos relacionados ao projeto
 
-└── README.md
+├── .gitignore
 
+└── README.md
 
 
 ## 📞 Contato da Clínica
