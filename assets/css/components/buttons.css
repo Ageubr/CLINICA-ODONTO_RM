@@ -1,0 +1,16 @@
+.whatsapp {
+  color: #fff;
+  background: #25d366;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp:hover {
+  background: #128c7e;
+}

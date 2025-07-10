@@ -1,1 +1,101 @@
- 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clínica Odontológica RM</title>
+
+  <!-- GLOBAL CSS -->
+  <link rel="stylesheet" href="../assets/css/global.css">
+
+  
+  <link rel="icon" href="../assets/images/logos/logo_principal.png" />
+  
+  <!-- AOS CSS e Swiper CSS via JS, para evitar carregar se não usar -->
+  
+  <!-- FontAwesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header carregado dinamicamente -->
+  <div id="header-include"></div>
+
+  <main>
+    <section class="hero" data-aos="fade-up">
+      <h2>Conheça as nossas</h2>
+      <h1>Especialidades</h1>
+    </section>
+
+    <section class="especialidades" data-aos="fade-up">
+      <ul class="fade-in">
+        <li>
+          <img src="../assets/images/icons/protese.jpg" alt="Próteses" class="icon" />
+          Próteses
+        </li>
+        <li>
+          <img src="../assets/images/icons/implante.jpg" alt="Implantes" class="icon" />
+          Implantes
+        </li>
+        <li>
+          <img src="../assets/images/icons/ortodontia.jpg" alt="Ortodontia" class="icon" />
+          Ortodontia
+        </li>
+        <li>
+          <img src="../assets/images/icons/endodontia.jpg" alt="Endodontia" class="icon" />
+          Endodontia
+        </li>
+        <li>
+          <img src="../assets/images/icons/clinica.jpg" alt="Clínica Geral" class="icon" />
+          Clínica Geral
+        </li>
+      </ul>
+
+      <div class="imagem-destaque" data-aos="fade-up">
+        <img src="../assets/images/clinic/maquete_dente.jpg" alt="Demonstração Odontológica" />
+      </div>
+    </section>
+
+    <!-- Banner rotativo depoimentos -->
+    <section class="depoimentos" data-aos="fade-up">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>"Excelente atendimento e profissionalismo."</p>
+            <strong>- João Silva</strong>
+          </div>
+          <div class="swiper-slide">
+            <p>"Minha saúde bucal melhorou muito aqui."</p>
+            <strong>- Maria Souza</strong>
+          </div>
+          <div class="swiper-slide">
+            <p>"Equipe muito atenciosa e ambiente agradável."</p>
+            <strong>- Carlos Pereira</strong>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="agendamento" data-aos="fade-up">
+      <p>Agende o seu horário</p>
+      <a href="https://wa.me/5561995770905" class="whatsapp" target="_blank">(61) 99577-0905</a>
+    </section>
+  </main>
+
+  <!-- Footer carregado dinamicamente -->
+  <div id="footer-include"></div>
+
+  <!-- Scripts principais -->
+  <script src="../assets/js/main.js"></script>
+  
+  <!-- Biblioteca externa via main.js (AOS, Lottie, Swiper) -->
+
+  <!-- Custom JS separado -->
+  <script src="../assets/js/custom.js"></script>
+
+</body>
+</html>
