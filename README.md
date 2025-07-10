@@ -22,52 +22,16 @@ Este repositório contém o código-fonte do site da **Clínica Odontológica RM
 - **Font Awesome** – ícones para telefone, localização, redes sociais etc.  
 - **Google Fonts** – fontes modernas e agradáveis  
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura raiz do Projeto
 
 clinica-odontologica/
-├── pages/
+├── pages/...
 
-│   ├──index.html
+├── assets/...
 
-│   ├── services.html
+├── docs/...
 
-│   ├── gallery.html
-
-│   ├── contact.html
-
-│   ├── about.html
-
-├── assets/
-
-│   ├── css/
-
-│   │   ├── style.css
-
-│   │   ├── header.css
-
-│   │   └── footer.css
-
-│   ├── js/
-
-│   │   ├── main.js
-
-│   │   ├── whatsapp.js
-
-│   │   └── darkmode.js
-
-│   ├── fonts/
-
-│   ├── images/
-
-│   │   ├── logos/
-
-│   │   ├── clinic/
-
-│   │   └── icons/
-
-│   └── vendor/           # libs externas, se houver
-
-├── docs/                 # documentos relacionados ao projeto
+├── partials/...
 
 ├── .gitignore
 
