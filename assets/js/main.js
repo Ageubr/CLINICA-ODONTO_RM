@@ -55,17 +55,15 @@ async function init() {
   }
 
   // Inicializar Swiper para banners
-  const bannerSwiper = new Swiper('.banner.swiper', {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoHeight: true,
-  });
+const swiper = new Swiper('.banner.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoHeight: true
+});
 
   // Inicializar Swiper para depoimentos (separado, se necessário)
   const depoimentosSwiper = new Swiper('.depoimentos .swiper', {

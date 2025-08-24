@@ -1,0 +1,69 @@
+.hero {
+  text-align: center;
+  margin: 40px 0 24px 0;
+}
+
+.hero h1 {
+  color: #444;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 32px 24px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.about-content h2 {
+  color: #25d366;
+  font-size: 1.3rem;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.about-content p {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.convenios {
+  text-align: center;
+  margin: 40px 0 24px 0;
+}
+
+.convenios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.convenio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.convenio img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 8px;
+}
+
+.convenio span {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 4px;
+}

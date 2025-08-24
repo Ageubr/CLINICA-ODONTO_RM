@@ -1,0 +1,57 @@
+.hero {
+  text-align: center;
+  margin: 40px 0 24px 0;
+}
+
+.hero h1 {
+  color: #444;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.especialidades ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.especialidades li {
+  background: #e0e0e0;
+  color: #444;
+  margin-bottom: 16px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 14px;
+}
+
+.agendamento {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.whatsapp {
+  color: #fff;
+  background: #25d366;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.whatsapp:hover {
+  background: #128c7e;
+}
