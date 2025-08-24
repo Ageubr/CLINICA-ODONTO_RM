@@ -1,66 +1,53 @@
-.hero {
-  text-align: center;
-  margin: 40px 0 24px 0;
-}
-
-.hero h1 {
-  color: #444;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.contact-form {
+.agendamento-online {
   max-width: 420px;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
   background: #f7f7f7;
   padding: 32px 24px;
   border-radius: 14px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  text-align: center;
 }
 
-.contact-form form {
+.agendamento-online h2 {
+  color: #25d366;
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+}
+
+.agendamento-online form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.agendamento-online label {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.agendamento-online input,
+.agendamento-online select {
   padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
-  resize: vertical;
+  background: #fff;
 }
 
-.contact-form textarea {
-  min-height: 80px;
-}
-
-.contact-form .btn {
+.agendamento-online .btn {
   background: #25d366;
   color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s;
 }
 
-.contact-form .btn:hover {
+.agendamento-online .btn:hover {
   background: #128c7e;
-}
-
-.contact-info {
-  margin-top: 24px;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.contact-info i {
-  margin-right: 8px;
-  color: #25d366;
 }

@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contato | Clínica Odontológica RM</title>
+  <title>Agendar Consulta | Clínica Odontológica RM</title>
   <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/components/contact.css">
   <link rel="icon" href="../assets/images/logos/logo_principal.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
@@ -12,21 +13,89 @@
   <div id="header-include"></div>
   <main>
     <section class="hero" data-aos="fade-up">
-      <h1>Contato</h1>
-      <p>Fale conosco ou agende sua consulta.</p>
+      <h1>Agendamentos</h1>
+      <p>Faça já seu agendamento!</p>
     </section>
-    <section class="contact-form" data-aos="fade-up">
-      <form action="https://formsubmit.co/ageu3561@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <textarea name="message" placeholder="Sua mensagem" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
+    <section class="agendamento-online" data-aos="fade-up">
+      <h2>Agende sua consulta</h2>
+      <form id="form-agendamento">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+        <label for="servico">Serviço desejado:</label>
+        <select id="servico" name="servico" required>
+          <option value="">Selecione...</option>
+          <option value="Prótese">Prótese</option>
+          <option value="Implantes">Implantes</option>
+          <option value="Ortodontia">Ortodontia</option>
+          <option value="Endodontia">Endodontia</option>
+          <option value="Clínica geral">Clínica geral</option>
+          <option value="Manutenção">Manutenção</option>
+        </select>
+
+        <label for="dia">Dia da semana:</label>
+        <select id="dia" name="dia" required>
+          <option value="">Selecione...</option>
+          <option value="Segunda-feira">Segunda-feira</option>
+          <option value="Terça-feira">Terça-feira</option>
+          <option value="Quarta-feira">Quarta-feira</option>
+          <option value="Quinta-feira">Quinta-feira</option>
+          <option value="Sexta-feira">Sexta-feira</option>
+          <option value="Sábado">Sábado</option>
+        </select>
+
+        <label for="horario">Horário:</label>
+        <select id="horario" name="horario" required>
+          <option value="">Selecione...</option>
+        </select>
+
+        <button type="submit" class="btn">Confirme seu agendamento aqui!</button>
       </form>
-      <div class="contact-info">
-        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5561995770905" target="_blank">(61) 99577-0905</a></p>
-        <p><i class="fa-solid fa-location-dot"></i> Brasília, DF</p>
-      </div>
     </section>
+    <script>
+      // Atualiza horários conforme o dia selecionado
+      document.getElementById('dia').addEventListener('change', function() {
+        const dia = this.value;
+        const horarioSelect = document.getElementById('horario');
+        horarioSelect.innerHTML = '<option value="">Selecione...</option>';
+
+        let horarios = [];
+        if (dia === "Sábado") {
+          horarios = [
+            "08:00", "08:30", "09:00", "09:30", "10:00", "10:30",
+            "11:00", "11:30", "12:00", "12:30", "13:00"
+          ];
+        } else if (dia) {
+          horarios = [
+            "09:30", "10:00", "10:30", "11:00", "11:30",
+            "12:00", "12:30", "13:00", "13:30", "14:00",
+            "14:30", "15:00", "15:30", "16:00"
+          ];
+        }
+
+        horarios.forEach(h => {
+          const opt = document.createElement('option');
+          opt.value = h;
+          opt.textContent = h;
+          horarioSelect.appendChild(opt);
+        });
+      });
+
+      document.getElementById('form-agendamento').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const servico = document.getElementById('servico').value;
+        const dia = document.getElementById('dia').value;
+        const horario = document.getElementById('horario').value;
+        const mensagem = `Olá, gostaria de agendar uma consulta:\nNome: ${nome}\nE-mail: ${email}\nServiço: ${servico}\nDia: ${dia}\nHorário: ${horario}`;
+        const url = `https://wa.me/5561995770905?text=${encodeURIComponent(mensagem)}`;
+        window.open(url, '_blank');
+      });
+    </script>
   </main>
   <div id="footer-include"></div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

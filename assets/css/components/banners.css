@@ -21,7 +21,7 @@
 .banner img,
 .swiper-slide img {
   width: 100vw;
-  height: 400px;
+  height: 700px;
   object-fit: cover;
   display: block;
 }
