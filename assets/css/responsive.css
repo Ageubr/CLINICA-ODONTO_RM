@@ -30,3 +30,9 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 250px;
+  }
+}

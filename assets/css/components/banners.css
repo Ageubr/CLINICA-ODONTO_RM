@@ -1,0 +1,36 @@
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+.banner.swiper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+.banner .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner .swiper-slide {
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner img {
+  display: block;
+  margin: 0 auto;
+}
+
