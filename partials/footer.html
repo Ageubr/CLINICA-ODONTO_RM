@@ -1,3 +1,12 @@
 <footer class="footer">
-    <p>&copy; 2025 Clínica Odontológica RM. Todos os direitos reservados.</p>
+  <p>&copy; <span id="year"></span> Clínica Odontológica RM. Todos os direitos reservados.</p>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<ul class="footer-links">
+  <li><a href="privacy.html">Política de Privacidade</a></li>
+  <li><a href="terms.html">Termos de Uso</a></li>
+</ul>

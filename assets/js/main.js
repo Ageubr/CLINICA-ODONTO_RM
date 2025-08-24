@@ -10,25 +10,10 @@ function loadScript(src) {
   });
 }
 
-async function includeHTML(selector, url) {
-  const el = document.querySelector(selector);
-  if (!el) return;
-  try {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`Erro ao carregar ${url}`);
-    const html = await response.text();
-    el.innerHTML = html;
-  } catch (err) {
-    console.error(`Erro ao incluir HTML de ${url}:`, err);
-  }
-}
-
 async function init() {
-  await includeHTML("#header-include", "../partials/header.html");
-  await includeHTML("#footer-include", "../partials/footer.html");
-
-  // Carregar CSS de AOS e Swiper (inserir no head)
+  // Carregar CSS de AOS e Swiper
   const head = document.head;
+
   const aosCss = document.createElement('link');
   aosCss.rel = 'stylesheet';
   aosCss.href = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css';
@@ -57,17 +42,20 @@ async function init() {
     easing: 'ease-in-out',
   });
 
-  // Inicializar Lottie - exemplo para protese
-  lottie.loadAnimation({
-    container: document.getElementById('protese-lottie'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://assets8.lottiefiles.com/packages/lf20_yg9snycb.json'
-  });
+  // Inicializar Lottie (exemplo para prótese)
+  const proteseContainer = document.getElementById('protese-lottie');
+  if (proteseContainer) {
+    lottie.loadAnimation({
+      container: proteseContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://assets8.lottiefiles.com/packages/lf20_yg9snycb.json'
+    });
+  }
 
-  // Inicializar Swiper
-  const swiper = new Swiper('.swiper', {
+  // Inicializar Swiper para banners
+  const bannerSwiper = new Swiper('.banner.swiper', {
     loop: true,
     autoplay: {
       delay: 5000,
@@ -76,8 +64,21 @@ async function init() {
       el: '.swiper-pagination',
       clickable: true,
     },
+    autoHeight: true,
+  });
+
+  // Inicializar Swiper para depoimentos (separado, se necessário)
+  const depoimentosSwiper = new Swiper('.depoimentos .swiper', {
+    loop: true,
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: '.depoimentos .swiper-pagination',
+      clickable: true,
+    },
+    autoHeight: true,
   });
 }
 
-// Inicia tudo quando DOM estiver pronto
 document.addEventListener("DOMContentLoaded", init);

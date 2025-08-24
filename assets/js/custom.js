@@ -18,18 +18,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Inicializa Swiper
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
+// Inicializa Swiper para o banner principal
+const bannerSwiper = new Swiper('.banner.swiper', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoHeight: true, // ESSENCIAL para ajustar à altura da imagem
 });
+
+// Inicializa Swiper para o banner hero
 
 new Swiper('.hero.swiper', {
   loop: true,
@@ -42,3 +44,4 @@ new Swiper('.hero.swiper', {
   },
 });
 
+});

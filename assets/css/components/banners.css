@@ -5,6 +5,7 @@
 }
 
 .banner.swiper {
+  height: auto;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 40px;
@@ -15,14 +16,16 @@
 }
 
 .banner .swiper-wrapper {
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
+
 .banner .swiper-slide {
-  max-height: 400px;
+  height: auto;
+  max-height: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +33,17 @@
 }
 
 .banner img {
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    max-height: 250px;
+  }
 }
 
